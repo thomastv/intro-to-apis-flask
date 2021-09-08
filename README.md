@@ -4,8 +4,6 @@
 
 [Remix on Glitch](https://glitch.com/edit/#!/import/git?url=https://github.com/craigsdennis/intro-to-apis-flask)
 
-⚠️ Several students have reported that cloning erroneously sets up a default Glitch application. If this happens to you, in the Glitch app that is created choose **Tools** >> **Extras** >> **Git Import and Export** >> **Import from GitHub** when prompted enter  `craigsdennis/intro-to-apis-flask`
-
 ## Local Installation
 
 Copy `.env.example` to `.env` and update it with your [Twilio](https://twilio.com) credentials.
