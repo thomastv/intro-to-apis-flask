@@ -9,6 +9,7 @@ from flask import (
     request,
     url_for,
 )
+from twilio.rest import Client
 
 load_dotenv()
 app = Flask(__name__)
@@ -23,7 +24,11 @@ def get_sent_messages():
 
 def send_message(to, body):
     # TODO: Send the text message
-    pass
+    client.messages.create(
+      to=to,
+      body=body,
+      from_=TWILIO_PHONE_NUMBER
+    )
 
 @app.route("/", methods=["GET"])
 def index():
